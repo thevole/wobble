@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B1DD4641A28F552002CC85C /* WobbleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1DD4631A28F552002CC85C /* WobbleButton.swift */; };
 		5BD69E0E1A279813006051E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD69E0D1A279813006051E7 /* AppDelegate.swift */; };
 		5BD69E101A279813006051E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD69E0F1A279813006051E7 /* ViewController.swift */; };
 		5BD69E131A279813006051E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BD69E111A279813006051E7 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B1DD4631A28F552002CC85C /* WobbleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WobbleButton.swift; sourceTree = "<group>"; };
 		5BD69E081A279813006051E7 /* wobble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wobble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BD69E0C1A279813006051E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BD69E0D1A279813006051E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				5BD69E141A279813006051E7 /* Images.xcassets */,
 				5BD69E161A279813006051E7 /* LaunchScreen.xib */,
 				5BD69E0B1A279813006051E7 /* Supporting Files */,
+				5B1DD4631A28F552002CC85C /* WobbleButton.swift */,
 			);
 			path = wobble;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B1DD4641A28F552002CC85C /* WobbleButton.swift in Sources */,
 				5BD69E101A279813006051E7 /* ViewController.swift in Sources */,
 				5BD69E0E1A279813006051E7 /* AppDelegate.swift in Sources */,
 			);
@@ -405,6 +409,7 @@
 				5BD69E291A279813006051E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BD69E2A1A279813006051E7 /* Build configuration list for PBXNativeTarget "wobbleTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +418,7 @@
 				5BD69E2C1A279813006051E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

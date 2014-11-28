@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C68k" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Y59-db-giD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--One-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="wobble" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,79 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3B-k8-hQt" customClass="WobbleButton" customModule="wobble" customModuleProvider="target">
+                                <rect key="frame" x="264" y="264" width="72" height="72"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="GoogleIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHO-KE-ggT" customClass="WobbleButton" customModule="wobble" customModuleProvider="target">
+                                <rect key="frame" x="264" y="184" width="72" height="72"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="FacebookIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8S-Vs-YtF">
+                                <rect key="frame" x="283.5" y="550" width="33" height="30"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopWobble:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="V5t-OY-OYc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4B-99-nbc" customClass="WobbleButton" customModule="wobble" customModuleProvider="target">
+                                <rect key="frame" x="264" y="344" width="72" height="72"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="TwitterIcon">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V8S-Vs-YtF" secondAttribute="bottom" constant="20" id="EcT-Ub-6sr"/>
+                            <constraint firstAttribute="centerX" secondItem="G3B-k8-hQt" secondAttribute="centerX" id="FWT-6o-v5z"/>
+                            <constraint firstItem="Z4B-99-nbc" firstAttribute="top" secondItem="G3B-k8-hQt" secondAttribute="bottom" constant="8" id="Ov8-48-EwU"/>
+                            <constraint firstItem="G3B-k8-hQt" firstAttribute="centerX" secondItem="Z4B-99-nbc" secondAttribute="centerX" id="QCa-gv-N4O"/>
+                            <constraint firstItem="G3B-k8-hQt" firstAttribute="top" secondItem="uHO-KE-ggT" secondAttribute="bottom" constant="8" id="U0m-Jt-2G0"/>
+                            <constraint firstAttribute="centerX" secondItem="V8S-Vs-YtF" secondAttribute="centerX" id="Vbd-El-GuE"/>
+                            <constraint firstAttribute="centerY" secondItem="G3B-k8-hQt" secondAttribute="centerY" id="efC-Ih-qDQ"/>
+                            <constraint firstItem="G3B-k8-hQt" firstAttribute="centerX" secondItem="uHO-KE-ggT" secondAttribute="centerX" id="tQK-8i-ZHa"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="One" id="uHT-jn-xxW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1117" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3Sj-V6-s2M">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y59-db-giD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c99-PW-c66">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="XEf-4U-kql"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4VF-6Q-eRB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FacebookIcon" width="72" height="72"/>
+        <image name="GoogleIcon" width="72" height="72"/>
+        <image name="TwitterIcon" width="72" height="72"/>
+    </resources>
 </document>
